@@ -1,0 +1,210 @@
+GIT Homework 1
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.---https://github.com/new +(public+Add a README file)+Create repository
+ 5. Клонировать репозиторий JSON на локальный компьютер.-- git clone https://github.com/SergeyBudanov/JSON.git  
+ 6. Внутри локального JSON создать файл “new.json”.--- vim new.json
+ 7. Добавить файл под гит.--- git add new.json
+ 8. Закоммитить файл.---git commit -m "greate new.json"
+ 9. Отправить файл на внешний GitHub репозиторий.---git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе 
+(ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.--- Vim new.json (i -редактировать)
+{
+   "Full name":"Budanov Sergey",
+   "Age": "38",
+   "My pets" :"no pets",
+   "Desired Salary" : " 1500 dollars"
+
+}
+ esc :wq
+ 11. Отправить изменения на внешний репозиторий.
+git commit -a -m "changes new.json" (git add)
+git push
+ 12. Создать файл preferences.json--- vim preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях 
+(Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.--- vim preferences.json (i -редактировать)
+{
+        "My favorite movie": "Interstellar",
+        "My favorite series" : "Sherlock ",
+        "My favorite food" : "steak",
+        "My favorite season" : " summer",
+        "side you would like to visit" : "Czech Republic"
+}
+esc :wq
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON---vim sklls.json (i -редактировать)
+{
+   "Skils1" : " Basic theory (What is testing, bug reports, documentation, types, methods, testing directions, etc.) SDLC, STLC",
+   "Skils2":"What is a client-server architecture",
+   "skils3" : "HTTP Methods of requests to the server",
+   "Skils4" :"HTTP server response codes",
+   "Skils5" :" Structures of HTTP requests and responses",
+   "Skils6": "What is JSON, XML. Their structure",
+   "Skils7" : "API testing via Postman (JS, API autotests)",
+   "Skils8":" Removing and reading logs from an external server",
+   "Skils9": "Sniffing http web traffic via Charles and Fiddler"
+
+}
+esc :wq
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+git add preferences.json (git add .)
+git add sklls.json
+git commit -m "Send 2 files at once to an external repository" (git commit -a -m "Send 2 files at once to an external repository")
+git push
+ 16. На веб интерфейсе создать файл bug_report.json. https://github.com/SergeyBudanov/JSON/new/main + (вносим название в поле bug_report.json)
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.--- commit new file
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON. --- https://github.com/SergeyBudanov/JSON/blob/main/bug_report.json + жмем на карандашь вносим изменения
+ {
+     "Summary" : "A short description of the problem, explicitly indicating the cause and type of error situation" ,
+     "Project" : "Name of the tested projec",
+     "Component" : "Name of the part or function of the product being tested",
+     "Version" : "The version on which the bug was found",
+     "Severity" : "The most common five-level system for grading the severity of a defect is: S1 (Blocker)S2(Critical)S3 (Major)S4 (Minor)S5 ( Trivial)",
+     "Priority" : "P1  (High)P2  (Medium)P3  (Low)",
+     "Status" : "bug workflow and life cycle",
+      "Author" : "Bug report creator",
+     "Assigned To" : "Name of the person assigned to resolve the issue",
+      "Environment" : "Information about the environment where the bug was found: operating system, service pack, for WEB testing - browser name and version, etc.",
+      "Description" : "Steps to Reproduce, Result, Expected Result",
+      "Add-ons" :  "Attachment"
+ }
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе. https://github.com/SergeyBudanov/JSON/edit/main/bug_report.json + нажимаем Commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON ---- git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.---https://github.com/new +(public+Add a README file)+Create repository
+ 22. Клонировать репозиторий XML на локальный компьютер.--- git clone https://github.com/SergeyBudanov/XML.git
+ 23. Внутри локального XML создать файл “new.xml”.--- vim new.xml
+ 24. Добавить файл под гит.---git add new.xml
+ 25. Закоммитить файл.---git commit -m "greate new.xml"
+ 26. Отправить файл на внешний GitHub репозиторий.--- git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе 
+(ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.---- vim new.xml (i- редактировать)
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <root>
+    <Full name>Budanov Sergey</Full name>
+    <Age>38</Age>
+    <My pets>no pets</My pets>
+    <Desired Salary> 1500 dollars</Desired Salary>
+</root>
+    esc :wq
+ 28. Отправить изменения на внешний репозиторий.---
+ git add new.xml
+ git commit -a -m "changes new.xml"
+ git push
+
+ 29. Создать файл preferences.xml--- vim preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях 
+(Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.--- vim preferences.xml (i- редактировать)
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <My favorite movie>Interstellar</My favorite movie>
+    <My favorite series>Sherlock </My favorite series>
+    <My favorite food>steak</My favorite food>
+    <My favorite season> summer</My favorite season>
+    <side you would like to visit>Czech Republic</side you would like to visit>
+</root>
+esc :wq
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML---vim sklls.xml (i- редактировать)
+    <?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <Skils1> Basic theory (What is testing, bug reports, documentation, types, methods, testing directions, etc.) SDLC, STLC</Skils1>
+    <Skils2>What is a client-server architecture</Skils2>
+    <skils3>HTTP Methods of requests to the server</skils3>
+    <Skils4>HTTP server response codes</Skils4>
+    <Skils5> Structures of HTTP requests and responses</Skils5>
+    <Skils6>What is JSON, XML. Their structure</Skils6>
+    <Skils7>API testing via Postman (JS, API autotests)</Skils7>
+    <Skils8> Removing and reading logs from an external server</Skils8>
+    <Skils9>Sniffing http web traffic via Charles and Fiddler</Skils9>
+</root>
+  esc :wq
+ 32. Сделать коммит в одну строку.---
+git add sklls.xml
+git add git preferences.xml
+git commit -a -m "Send 2 files at once to an external repository"
+ 33. Отправить сразу 2 файла на внешний репозиторий.---git push
+ 34. На веб интерфейсе создать файл bug_report.xml.---- https://github.com/SergeyBudanov/XML/new/main + (вносим название в поле bug_report.xml)
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.---commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.---https://github.com/SergeyBudanov/XML/blob/main/bug_report.xml+ жмем на карандашь вносим изменения
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <Summary>A short description of the problem, explicitly indicating the cause and type of error situation</Summary>
+    <Project>Name of the tested projec</Project>
+    <Component>Name of the part or function of the product being tested</Component>
+    <Version>The version on which the bug was found</Version>
+    <Severity>The most common five-level system for grading the severity of a defect is: S1 (Blocker)S2(Critical)S3 (Major)S4 (Minor)S5 ( Trivial)</Severity>
+    <Priority>P1  (High)P2  (Medium)P3  (Low)</Priority>
+    <Status>bug workflow and life cycle</Status>
+    <Author>Bug report creator</Author>
+    <Assigned To>Name of the person assigned to resolve the issue</Assigned To>
+    <Environment>Information about the environment where the bug was found: operating system, service pack, for WEB testing - browser name and version, etc.</Environment>
+    <Description>Steps to Reproduce, Result, Expected Result</Description>
+    <Add-ons>Attachment</Add-ons>
+</root>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.---https://github.com/SergeyBudanov/XML/edit/main/bug_report.xml + нажимаем Commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML ---git pull
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.--- https://github.com/new +(public+Add a README file)+Create repository
+ 2. Клонировать репозиторий TXT на локальный компьютер.---git clone git clone https://github.com/SergeyBudanov/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”.---vim new.txt
+ 4. Добавить файл под гит.---git add new.txt
+ 5. Закоммитить файл.--- git commit -m "greate new.txt"
+ 6. Отправить файл на внешний GitHub репозиторий.---git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе 
+(ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.-- vim new.txt (i-редактировать)
+Full name Budanov Sergey
+Age 38
+My pets no pets
+Desired Salary  1500 dollars
+esc :wq
+ 8. Отправить изменения на внешний репозиторий.---
+ git add new.txt
+ git commit -a -m "changes new.txt"
+ git push
+ 9. Создать файл preferences.txt--- vim preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях 
+(Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.---vim preferences.txt (i- редактировать)
+My favorite movie Interstellar
+My favorite series Sherlock 
+My favorite food steak
+My favorite season  summer
+side you would like to visit Czech Republic
+esc :wq
+ git add preferences.txt
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT---vim sklls.txt (i- редактировать)
+
+Skils1  Basic theory (What is testing, bug reports, documentation, types, methods, testing directions, etc.) SDLC, STLC
+Skils2 What is a client-server architecture
+skils3 HTTP Methods of requests to the server
+Skils4 HTTP server response codes
+Skils5  Structures of HTTP requests and responses
+Skils6 What is JSON, XML. Their structure
+Skils7 API testing via Postman (JS, API autotests)
+Skils8  Removing and reading logs from an external server
+Skils9 Sniffing http web traffic via Charles and Fiddler
+esc :wq
+git add sklls.txt
+ 12. Сделать коммит в одну строку.---git commit -a -m "Send 2 files at once to an external repository"
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.--- git push
+ 14. На веб интерфейсе создать файл bug_report.txt.---https://github.com/SergeyBudanov/TXT + add new file(вносим название в поле bug_report.xml)
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.---commit new file
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.---https://github.com/SergeyBudanov/TXT/new/main+ жмем на карандашь вносим изменения
+
+Summary A short description of the problem, explicitly indicating the cause and type of error situation
+Project Name of the tested projec
+Component Name of the part or function of the product being tested
+Version The version on which the bug was found
+Severity The most common five-level system for grading the severity of a defect is: S1 (Blocker)S2(Critical)S3 (Major)S4 (Minor)S5 ( Trivial)
+Priority P1  (High)P2  (Medium)P3  (Low)
+Status bug workflow and life cycle
+Author Bug report creator
+Assigned To Name of the person assigned to resolve the issue
+Environment Information about the environment where the bug was found: operating system, service pack, for WEB testing - browser name and version, etc.
+Description Steps to Reproduce, Result, Expected Result
+Add-ons Attachment
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.---https://github.com/SergeyBudanov/TXT/new/main + нажимаем Commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT ---git pull
