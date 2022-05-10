@@ -1,0 +1,7 @@
+The checklist contains:
+
+List of checks (with the required level of detail).
+Test environment:
+assembly on which testing was carried out;
+test environment (if applicable);
+information about the tester.
